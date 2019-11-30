@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class ListMain {
     public static void main(String[] args) {
-        IList<Integer> list = new ArrayList1<>();
+        IList<Integer> list = new LinkedList<>();
         Random rand = new Random();
         int numbersCount = 10;
         for (int i = 0; i < numbersCount; i++) {
@@ -18,5 +18,6 @@ public class ListMain {
         list.set(666,4);
         ListUtilities.display(list);
         System.out.println(list.get(4));
+
     }
 }
